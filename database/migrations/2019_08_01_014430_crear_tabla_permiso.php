@@ -16,7 +16,7 @@ class CrearTablaPermiso extends Migration
         Schema::create('permiso', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('nombre', 50);
-            $table->string('slog', 50);
+            $table->string('slug', 50);
             $table->timestamps();
         });
     }
